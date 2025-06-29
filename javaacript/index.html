@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="Number1"></label>
+        <input 
+        type="number"
+        id="Number1"
+        placeholder="Enter first number"
+        required
+        />
+       <label for="operation">Operation</label>
+       <select name="" id="operation" required>
+        <option value="">Select operation</option>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+       </select>
+
+        <label for="Number2"></label>
+        <input 
+        type="number"
+        id="Number2"
+        placeholder="Enter second number"
+        required
+        />
+
+        <button type="button" onclick="calculateSum()">calculateSum</button>
+        <div id="Result">Result</div>
+
+    </form>
+</body>
+<script >
+function calculateSum() {
+    const num1 = parseFloat (document.getElementById("Number1").value);
+    const num2 = parseFloat (document.getElementById("Number2").value);
+    const resultElement = document.getElementById("Result");
+
+    let result;
+    switch (operation) {
+        case "+"
+        result = num1 + num2;
+        break;
+
+
+    }
+    
+}
+</script>
+
+
+</html>
